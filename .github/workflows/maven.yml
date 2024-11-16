@@ -12,12 +12,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-name: Java CI with Maven
-
-on:
-  pull_request:
-    branches: [ "main" ]
-
 jobs:
   build:
 
