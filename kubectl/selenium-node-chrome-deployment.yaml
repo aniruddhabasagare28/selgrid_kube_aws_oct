@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: selenium-node-chrome
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: selenium-node-chrome
@@ -34,3 +34,5 @@ spec:
               value: "4443"
           ports:
             - containerPort: 5555
+
+#             selenium-hub-service.default.svc.cluster.local  default this is the service namespace, svc.cluster.local address the service inside the cluster
